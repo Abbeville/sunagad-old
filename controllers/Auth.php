@@ -26,4 +26,26 @@ class Auth extends Db
 
 		return $resp;
 	}
+
+	public static function AdminLogin($data)
+	{
+		foreach ($data as $key => $value)
+		{
+			$$key = $value;
+		}
+
+		$query = parent::select('admin',"username = '".$user."' AND password = '".$pass."'");
+		$count = count($query);
+		if($count < 1)
+		{
+			Session::setFlash('login_error','Username or password incorrect','error');
+			$resp = false;
+		}
+		else
+		{
+			$resp = true;
+		}
+
+		return $resp;
+	}
 }

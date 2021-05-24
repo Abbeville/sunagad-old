@@ -18,7 +18,19 @@ class Session
 
 	public static function is_user()
 	{
-		if(isset($_SESSION['hospital_loggedin']))
+		if(isset($_SESSION['user_loggedin']))
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+	}
+
+	public static function is_admin()
+	{
+		if(isset($_SESSION['admin_loggedin']))
 		{
 			return true;
 		}
@@ -68,9 +80,9 @@ class Session
 
 	public static function login($username)
 	{
-		$_SESSION['hospital_loggedin'] = true;
+		$_SESSION['admin_loggedin'] = true;
 		$_SESSION['hospital_whois'] = $username;
-		Db::updater('users', array('last_login'=>'CURRENT_TIMESTAMP'), 'username = \''.$username.'\'');
+		Db::updater('admin', array('last_login'=>'CURRENT_TIMESTAMP'), 'username = \''.$username.'\'');
 	}
 
 	public static function clear($name)
@@ -81,6 +93,6 @@ class Session
 	public static function logout()
 	{
 		session_destroy();
-		Url::redirect('login.php');
+		Url::redirect('admin_login.php');
 	}
 }

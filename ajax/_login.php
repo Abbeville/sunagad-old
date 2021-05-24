@@ -2,7 +2,8 @@
 include "../autoload.php";
 new Session;
 
-$login = Auth::login($_POST);
+// $login = Auth::login($_POST);
+$login = Auth::AdminLogin($_POST);
 
 if($login < 1)
 {	

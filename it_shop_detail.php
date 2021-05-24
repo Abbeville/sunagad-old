@@ -134,14 +134,14 @@
                   <ul>
                     <li><a href="it_shop.php">Shop List</a></li>
                     <li><a href="it_shop_detail.php">Shop Detail</a></li>
-                    <li><a href="it_cart.html">Shopping Cart</a></li>
+                    <li><a href="it_cart.php">Shopping Cart</a></li>
                     <li><a href="it_checkout.html">Checkout</a></li>
                   </ul>
                 </li>
                 <li> <a href="it_contact.html">Contact</a>
                   <ul>
                     <li><a href="it_contact.html">Contact Page 1</a></li>
-                    <li><a href="it_contact_2.html">Contact Page 2</a></li>
+                    <li><a href="admin_login.php">Contact Page 2</a></li>
                   </ul>
                 </li>
               </ul>
@@ -200,11 +200,14 @@
             <div class="detail-contant">
               <p><?= $product->short_description ?><br><br>
                 <span class="stock"><?= $product->stock ?: 'Out of Stock' ?></span> </p>
-              <form class="cart" method="post" action="it_cart.html">
+              <form class="cart" method="post" action="it_cart.php">
                 <div class="quantity">
-                  <input step="1" min="1" max="5" name="quantity" value="1" title="Qty" class="input-text qty text" size="4" type="number">
+                  <input step="1" min="1" max="5" name="quantity" value="0" title="Qty" class="input-text qty text" size="4" type="number" onchange="hasStock(this, '<?= $product->slug; ?>');">
+                  <input type="hidden" name="product_id" value="<?= $product->id; ?>">
+                  <input type="hidden" name="slug" value="<?= $product->slug; ?>">
+                  <input type="hidden" name="unit_price" value="<?= $product->price; ?>">
                 </div>
-                <button type="submit" class="btn sqaure_bt" <?= $product->stock ?: 'disabled'?>>Add to cart</button>
+                <button type="submit" name="add_to_cart"> class="btn sqaure_bt" <?= $product->stock ?: 'disabled'?>>Add to cart</button>
               </form>
             </div>
             <div class="share-post"> <a href="#" class="share-text">Share</a>
@@ -738,6 +741,13 @@
             width: 400,
             position: 'right'
         });
+    </script>
+
+    <script type="text/javascript">
+      
+      function hasStock(el, productSlug){
+        console.log(el.value+' '+productSlug);
+      }
     </script>
 </body>
 </html>

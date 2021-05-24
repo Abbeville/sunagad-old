@@ -1,3 +1,19 @@
+<?php 
+
+include "autoload.php";
+
+if (isset($_POST['add_to_cart'])) {
+  $data['id'] = $_POST['product_id'];
+  $data['slug'] = $_POST['slug'];
+  $data['quantity'] = $_POST['quantity'];
+  $data['unit_price'] = $_POST['unit_price'];
+
+  //Add this to user's cart
+
+  Site::addToCart($data);
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -121,14 +137,14 @@
                   <ul>
                     <li><a href="it_shop.php">Shop List</a></li>
                     <li><a href="it_shop_detail.php">Shop Detail</a></li>
-                    <li><a href="it_cart.html">Shopping Cart</a></li>
+                    <li><a href="it_cart.php">Shopping Cart</a></li>
                     <li><a href="it_checkout.html">Checkout</a></li>
                   </ul>
                 </li>
                 <li> <a href="it_contact.html">Contact</a>
                   <ul>
                     <li><a href="it_contact.html">Contact Page 1</a></li>
-                    <li><a href="it_contact_2.html">Contact Page 2</a></li>
+                    <li><a href="admin_login.php">Contact Page 2</a></li>
                   </ul>
                 </li>
               </ul>
