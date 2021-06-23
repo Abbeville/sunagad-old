@@ -14,4 +14,6 @@ interface StorageInterface()
 
 	public function unset($index);
 
+	public function clear();
+
 }

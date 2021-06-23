@@ -11,6 +11,8 @@ if (isset($_POST['add_to_cart'])) {
   //Add this to user's cart
 
   Site::addToCart($data);
+
+  $items = Site::
 }
 
 ?>

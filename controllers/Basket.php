@@ -1,16 +1,25 @@
 <?php
 
+include '../Contracts/StorageInterface';
+
 class Basket
 {
 	protected $storage;
+
+	protected $product;
 	
-	function __construct(StorageInterface $storage)
+	function __construct(StorageInterface $storage, $product)
 	{
 		$this->storage = $storage;
+		$this->product = $product;
 	}
 
 	public function add($product)
 	{
+		if ($this->has($product)) {
+			
+		}
+		
 		$this->storage->add($product);
 	}
 

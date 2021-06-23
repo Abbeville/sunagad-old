@@ -102,7 +102,7 @@ class Site extends Db
 		}
 	}
 
-	public function addToCart($data){
+	public static function addToCart($data){
 		$basket->add($data['product_id']);
 	}
 

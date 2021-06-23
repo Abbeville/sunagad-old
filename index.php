@@ -1,10 +1,5 @@
 <?php
   include "autoload.php";
-  Session::start();
-  if (!Session::is_user())
-  {
-      header("location: login.php");
-  }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -57,8 +52,8 @@
           <div class="full">
             <div class="topbar-left">
               <ul class="list-inline">
-                <li> <span class="topbar-label"><i class="fa  fa-home"></i></span> <span class="topbar-hightlight">House No 12, Plot E2, Orisunbare Estate, Jankata, Apata, Ibadan</span> </li>
-                <li> <span class="topbar-label"><i class="fa fa-envelope-o"></i></span> <span class="topbar-hightlight"><a href="mailto:info@yourdomain.com">sunagad@yahoo.com</a></span> </li>
+                <li> <span class="topbar-label"><i class="fa  fa-home"></i></span> <span class="topbar-hightlight">540 Lorem Ipsum New York, AB 90218</span> </li>
+                <li> <span class="topbar-label"><i class="fa fa-envelope-o"></i></span> <span class="topbar-hightlight"><a href="mailto:info@yourdomain.com">info@yourdomain.com</a></span> </li>
               </ul>
             </div>
           </div>
@@ -220,7 +215,7 @@
                               data-splitout="none" 
                               data-responsive_offset="on" 
                               data-elementdelay="0.05" 
-                              style="z-index: 6; white-space: nowrap;">Sunagad Computer Services </div>
+                              style="z-index: 6; white-space: nowrap;">Computer Services </div>
               <!-- LAYER NR. 3 -->
               <div class="tp-caption NotGeneric-SubTitle   tp-resizeme rs-parallaxlevel-0" 
                               id="slide-18-layer-412" 
@@ -238,7 +233,7 @@
                               data-splitin="none" 
                               data-splitout="none" 
                               data-responsive_offset="on" 
-                              style="z-index: 7; white-space: nowrap;">We Are Always Available When It Comes to IT </div>
+                              style="z-index: 7; white-space: nowrap;">Available On It.Next </div>
             </li>
             <li data-index="rs-181" data-transition="zoomin" data-slotamount="7"  data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000"  data-thumb="images/it_service/slide2.jpg"  data-rotate="0"  data-saveperformance="off"  data-title="Easy To Use & Customize" data-description="">
               <!-- MAIN IMAGE -->
@@ -296,7 +291,7 @@
                               data-splitout="none" 
                               data-responsive_offset="on" 
                               data-elementdelay="0.05" 
-                              style="z-index: 6; white-space: nowrap;">Good Service & Affordable </div>
+                              style="z-index: 6; white-space: nowrap;">Fast & Affordable </div>
               <!-- LAYER NR. 3 -->
               <div class="tp-caption NotGeneric-SubTitle   tp-resizeme rs-parallaxlevel-0" 
                               id="slide-18-layer-41" 
@@ -314,7 +309,7 @@
                               data-splitin="none" 
                               data-splitout="none" 
                               data-responsive_offset="on" 
-                              style="z-index: 7; white-space: nowrap;">We Are Always Available When It Comes to IT  </div>
+                              style="z-index: 7; white-space: nowrap;">Available On It.Next </div>
             </li>
             <li data-index="rs-18" data-transition="zoomin" data-slotamount="7"  data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000"  data-thumb="images/it_service/slide3.jpg"  data-rotate="0"  data-saveperformance="off"  data-title="Perfectly Responsive" data-description="">
               <!-- MAIN IMAGE -->
@@ -372,7 +367,7 @@
                               data-splitout="none" 
                               data-responsive_offset="on" 
                               data-elementdelay="0.05" 
-                              style="z-index: 6; white-space: nowrap;">We will fix it </div>
+                              style="z-index: 6; white-space: nowrap;">We Will Fix It </div>
               <!-- LAYER NR. 3 -->
               <div class="tp-caption NotGeneric-SubTitle   tp-resizeme rs-parallaxlevel-0" 
                               id="slide-18-layer-4" 
@@ -390,7 +385,7 @@
                               data-splitin="none" 
                               data-splitout="none" 
                               data-responsive_offset="on" 
-                              style="z-index: 7; white-space: nowrap;">We Are Always Available When It Comes to IT  </div>
+                              style="z-index: 7; white-space: nowrap;">Available On It.Next </div>
             </li>
           </ul>
           <div class="tp-static-layers"></div>
@@ -419,17 +414,8 @@
           <div class="center">
             <div class="icon"> <img src="images/it_service/i1.png" alt="#" /> </div>
           </div>
-          <h4 class="theme_color">Programming Training</h4>
-          <p>We are born teacher, no doubt we will give you the best!</p>
-        </div>
-      </div>
-	  <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-        <div class="full text_align_center margin_bottom_30">
-          <div class="center">
-            <div class="icon"> <img src="images/it_service/i1.png" alt="#" /> </div>
-          </div>
-          <h4 class="theme_color">Profesional certification</h4>
-          <p>We will train you to enable you to pass your examination eith ease!</p>
+          <h4 class="theme_color">Data recovery</h4>
+          <p>Perspiciatis eos quos totam cum minima aut!</p>
         </div>
       </div>
       <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
@@ -438,7 +424,16 @@
             <div class="icon"> <img src="images/it_service/i2.png" alt="#" /> </div>
           </div>
           <h4 class="theme_color">Computer repair</h4>
-          <p>With us your Computer is safe!</p>
+          <p>Perspiciatis eos quos totam cum minima aut!</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+        <div class="full text_align_center margin_bottom_30">
+          <div class="center">
+            <div class="icon"> <img src="images/it_service/i3.png" alt="#" /> </div>
+          </div>
+          <h4 class="theme_color">Mobile service</h4>
+          <p>Perspiciatis eos quos totam cum minima aut!</p>
         </div>
       </div>
       <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
@@ -447,7 +442,7 @@
             <div class="icon"> <img src="images/it_service/i4.png" alt="#" /> </div>
           </div>
           <h4 class="theme_color">Network solutions</h4>
-          <p>It is our work, we are proffesional in it!</p>
+          <p>Perspiciatis eos quos totam cum minima aut!</p>
         </div>
       </div>
     </div>
@@ -612,198 +607,37 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 margin_bottom_30_all">
-        <div class="product_list">
-          <div class="product_img"> <img class="img-responsive" src="images/it_service/1.jpg" alt=""> </div>
-          <div class="product_detail_btm">
-            <div class="center">
-              <h4><a href="it_shop_detail.php">Norton Internet Security</a></h4>
-            </div>
-            <div class="starratin">
-              <div class="center"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i> </div>
-            </div>
-            <div class="product_price">
-              <p><span class="old_price">#4,500.00</span> – <span class="new_price">#5,500.00</span></p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 margin_bottom_30_all">
-        <div class="product_list">
-          <div class="product_img"> <img class="img-responsive" src="images/it_service/2.jpg" alt=""> </div>
-          <div class="product_detail_btm">
-            <div class="center">
-              <h4><a href="it_shop_detail.php">Kaspersky Internet Security</a></h4>
-            </div>
-            <div class="starratin">
-              <div class="center"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i> </div>
-            </div>
-            <div class="product_price">
-              <p><span class="old_price">#5,500.00</span><span class="new_price"> #5,200.00</span></p>
+      <?php 
+      $all = Site::products();
+      if(empty($all))
+      {
+        echo "No Product Available";
+      }
+      else
+      {
+        foreach($all as $product)
+        {
+      ?>
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 margin_bottom_30_all">
+          <div class="product_list">
+            <div class="product_img"> <img class="img-responsive" src="<?php echo Url::host()."/images/".$product->image; ?>" alt=""> </div>
+            <div class="product_detail_btm">
+              <div class="center">
+                <h4><a href="it_shop_detail.php"><?= $product->title; ?></a></h4>
+              </div>
+              <div class="starratin">
+                <div class="center"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i> </div>
+              </div>
+              <div class="product_price">
+                <p><span class="old_price">₦<?= $product->old_price ?></span> – <span class="new_price">₦<?= $product->price ?></span></p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 margin_bottom_30_all">
-        <div class="product_list">
-          <div class="product_img"> <img class="img-responsive" src="images/it_service/3.jpg" alt=""> </div>
-          <div class="product_detail_btm">
-            <div class="center">
-              <h4><a href="it_shop_detail.php">Mcafee Livesafe Antivirus</a></h4>
-            </div>
-            <div class="starratin">
-              <div class="center"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i> </div>
-            </div>
-            <div class="product_price">
-              <p><span class="old_price">#5,500.00</span><span class="new_price"> #3,500.00</span></p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 margin_bottom_30_all">
-        <div class="product_list">
-          <div class="product_img"> <img class="img-responsive" src="images/it_service/4.jpg" alt=""> </div>
-          <div class="product_detail_btm">
-            <div class="center">
-              <h4><a href="it_shop_detail.php">Norton Internet Security</a></h4>
-            </div>
-            <div class="starratin">
-              <div class="center"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i> </div>
-            </div>
-            <div class="product_price">
-              <p><span class="old_price">#4,500.00</span> – <span class="new_price">#5,500.00</span></p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 margin_bottom_30_all">
-        <div class="product_list">
-          <div class="product_img"> <img class="img-responsive" src="images/it_service/5.jpg" alt=""> </div>
-          <div class="product_detail_btm">
-            <div class="center">
-              <h4><a href="it_shop_detail.php">Norton Internet Security</a></h4>
-            </div>
-            <div class="starratin">
-              <div class="center"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i> </div>
-            </div>
-            <div class="product_price">
-              <p><span class="old_price">#5,500.00</span> – <span class="new_price">#5,500.00</span></p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 margin_bottom_30_all">
-        <div class="product_list">
-          <div class="product_img"> <img class="img-responsive" src="images/it_service/6.jpg" alt=""> </div>
-          <div class="product_detail_btm">
-            <div class="center">
-              <h4><a href="it_shop_detail.php">Kaspersky Internet Security</a></h4>
-            </div>
-            <div class="starratin">
-              <div class="center"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i> </div>
-            </div>
-            <div class="product_price">
-              <p><span class="old_price">#5,500.00</span><span class="new_price"> #5,500.00</span></p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 margin_bottom_30_all">
-        <div class="product_list">
-          <div class="product_img"> <img class="img-responsive" src="images/it_service/7.jpg" alt=""> </div>
-          <div class="product_detail_btm">
-            <div class="center">
-              <h4><a href="it_shop_detail.php">Mcafee Livesafe Antivirus</a></h4>
-            </div>
-            <div class="starratin">
-              <div class="center"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i> </div>
-            </div>
-            <div class="product_price">
-              <p><span class="old_price">#5,500.00</span><span class="new_price">#5,500.00</span></p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 margin_bottom_30_all">
-        <div class="product_list">
-          <div class="product_img"> <img class="img-responsive" src="images/it_service/8.jpg" alt=""> </div>
-          <div class="product_detail_btm">
-            <div class="center">
-              <h4><a href="it_shop_detail.php">Norton Internet Security</a></h4>
-            </div>
-            <div class="starratin">
-              <div class="center"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i> </div>
-            </div>
-            <div class="product_price">
-              <p><span class="old_price">#5,500.00</span> – <span class="new_price">#5,500.00</span></p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 margin_bottom_30_all">
-        <div class="product_list">
-          <div class="product_img"> <img class="img-responsive" src="images/it_service/1.jpg" alt=""> </div>
-          <div class="product_detail_btm">
-            <div class="center">
-              <h4><a href="it_shop_detail.php">Norton Internet Security</a></h4>
-            </div>
-            <div class="starratin">
-              <div class="center"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i> </div>
-            </div>
-            <div class="product_price">
-              <p><span class="old_price">#4,500.00</span> – <span class="new_price">#5,500.00</span></p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 margin_bottom_30_all">
-        <div class="product_list">
-          <div class="product_img"> <img class="img-responsive" src="images/it_service/2.jpg" alt=""> </div>
-          <div class="product_detail_btm">
-            <div class="center">
-              <h4><a href="it_shop_detail.php">Kaspersky Internet Security</a></h4>
-            </div>
-            <div class="starratin">
-              <div class="center"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i> </div>
-            </div>
-            <div class="product_price">
-              <p><span class="old_price">#5,500.00</span><span class="new_price"> #3,500.00</span></p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 margin_bottom_30_all">
-        <div class="product_list">
-          <div class="product_img"> <img class="img-responsive" src="images/it_service/3.jpg" alt=""> </div>
-          <div class="product_detail_btm">
-            <div class="center">
-              <h4><a href="it_shop_detail.php">Mcafee Livesafe Antivirus</a></h4>
-            </div>
-            <div class="starratin">
-              <div class="center"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i> </div>
-            </div>
-            <div class="product_price">
-              <p><span class="old_price">#5,500.00</span><span class="new_price"> #3,500.00</span></p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 margin_bottom_30_all">
-        <div class="product_list">
-          <div class="product_img"> <img class="img-responsive" src="images/it_service/4.jpg" alt=""> </div>
-          <div class="product_detail_btm">
-            <div class="center">
-              <h4><a href="it_shop_detail.php">Norton Internet Security</a></h4>
-            </div>
-            <div class="starratin">
-              <div class="center"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i> </div>
-            </div>
-            <div class="product_price">
-              <p><span class="old_price">$4,500.00</span> – <span class="new_price">#5,500.00</span></p>
-            </div>
-          </div>
-        </div>
-      </div>
+      <?php
+        }
+      }
+      ?>
     </div>
   </div>
 </div>
@@ -876,7 +710,7 @@
         <div class="full blog_colum">
           <div class="blog_feature_img"> <img src="images/it_service/post-03.jpg" alt="#" /> </div>
           <div class="post_time">
-            <p><i class="fa fa-clock-o"></i> May 16, 2020 ( In Maintenance )</p>
+            <p><i class="fa fa-clock-o"></i> April 16, 2018 ( In Maintenance )</p>
           </div>
           <div class="blog_feature_head">
             <h4>Why Your Computer Hates You</h4>
@@ -890,7 +724,7 @@
         <div class="full blog_colum">
           <div class="blog_feature_img"> <img src="images/it_service/post-04.jpg" alt="#" /> </div>
           <div class="post_time">
-            <p><i class="fa fa-clock-o"></i> May 16, 2020 ( In Maintenance )</p>
+            <p><i class="fa fa-clock-o"></i> April 16, 2018 ( In Maintenance )</p>
           </div>
           <div class="blog_feature_head">
             <h4>Easy Tips To Computer Repair</h4>
@@ -904,7 +738,7 @@
         <div class="full blog_colum">
           <div class="blog_feature_img"> <img src="images/it_service/post-06.jpg" alt="#" /> </div>
           <div class="post_time">
-            <p><i class="fa fa-clock-o"></i> May 16, 2020 ( In Maintenance )</p>
+            <p><i class="fa fa-clock-o"></i> April 16, 2018 ( In Maintenance )</p>
           </div>
           <div class="blog_feature_head">
             <h4>Computer Maintenance 2018</h4>

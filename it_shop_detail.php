@@ -207,7 +207,7 @@
                   <input type="hidden" name="slug" value="<?= $product->slug; ?>">
                   <input type="hidden" name="unit_price" value="<?= $product->price; ?>">
                 </div>
-                <button type="submit" name="add_to_cart"> class="btn sqaure_bt" <?= $product->stock ?: 'disabled'?>>Add to cart</button>
+                <button type="submit" name="add_to_cart" class="btn sqaure_bt" <?= $product->stock ?: 'disabled'?>>Add to cart</button>
               </form>
             </div>
             <div class="share-post"> <a href="#" class="share-text">Share</a>
