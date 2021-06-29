@@ -102,8 +102,13 @@ class Site extends Db
 		}
 	}
 
-	public static function addToCart($data){
-		$basket->add($data['product_id']);
+	public static function addToCart(Basket $basket, $product, $quantity){
+		try{
+			$basket->add($product, $quantity);
+
+		}catch(QuantiteExceededException $e){
+			echo $e->message;
+		}
 	}
 
 	public function removeFromCart($data){

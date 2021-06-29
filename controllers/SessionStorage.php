@@ -1,15 +1,12 @@
 <?php
 
-include "../Contracts/StorageInterface";
-
-use Countable;
-
+include "StorageInterface.php";
 
 
 class SessionStorage implements StorageInterface, Countable
 {
 
-	protected $bucket
+	protected $bucket;
 	
 	function __construct($bucket = 'default')
 	{
@@ -46,7 +43,17 @@ class SessionStorage implements StorageInterface, Countable
 	public function unset($index)
 	{
 		if ($this->exists($index)) {
-			unset($_SESSION[$this->bucket])
+			unset($_SESSION[$this->bucket]);
 		}
+	}
+
+	public function clear()
+	{
+		//Clear
+	}
+
+	public function count()
+	{
+		//count
 	}
 }

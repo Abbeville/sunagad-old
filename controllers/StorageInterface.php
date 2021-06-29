@@ -4,13 +4,13 @@
 
 interface StorageInterface
 {
-	public function set($index);
+	public function set($index, $value);
 
 	public function get($index);
+	
+	public function exists($index);
 
 	public function all();
-
-	public function exists($index);
 
 	public function unset($index);
 
